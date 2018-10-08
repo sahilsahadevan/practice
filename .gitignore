@@ -1,4 +1,5 @@
 /target/
+/docs/
 .mvn
 mvnw
 mvnw.cmd
