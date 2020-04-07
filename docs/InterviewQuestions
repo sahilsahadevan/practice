@@ -1,0 +1,27 @@
+Spoken : -
+
+1)How to make java HashMap Thread safe--> one way is using syncronized block syncronized(map){
+map.put(o,"qw")}
+2)Difference between eureka,zuul,Ribbon context url in zuul
+3)Jpa in and out quesstions(@prepressist @postUpdate ,@Entity,@Cachable,@CacheEvict)
+4)Spring boot internally using which caching
+5)difference between bootstrap.yml and application.yml
+6)downcasting
+7)Upcasting)
+String Immutability
+8)Wrapper Class
+9)Rules of over riding,constructor,hashcode and equals
+10)if hash collision happens what will happen
+11) Internal implimentation of set
+12)how to send attachments through rest service
+13)Internal Implementan of concurrent HashMap
+14) difference between Hash Map and concurrentHashMap
+15)Factory , singleton, String pool
+16) scope of bean in spring boot
+
+Practice:-
+1. Code to Print Numbers into Words
+2. Code to Print Sum of Diagonals in an array
+3. Code to identify Palindrom
+4. Code to Print Sentence Backwords
+5. Code to to Print Stars in the Shape of given word or Number
