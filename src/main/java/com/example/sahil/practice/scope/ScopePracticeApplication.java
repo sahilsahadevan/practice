@@ -11,7 +11,6 @@ import org.springframework.context.ApplicationContext;
 public class ScopePracticeApplication {
 
 	private static final Logger LOGGER = LoggerFactory.getLogger(ScopePracticeApplication.class);
-
 	public static void main(String[] args) {
 	ApplicationContext applicationContext =  SpringApplication.run(ScopePracticeApplication.class, args);
 		PersonDao personDao1 = applicationContext.getBean(PersonDao.class);

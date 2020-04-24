@@ -2,7 +2,6 @@ package com.example.sahil.practice.aop;
 
 import com.example.sahil.practice.aop.business.BusinessServiceImpl1;
 import com.example.sahil.practice.aop.business.BusinessServiceImpl2;
-import com.example.sahil.practice.scope.dao.PersonDao;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -14,9 +13,11 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class AopPracticeApplication implements CommandLineRunner {
 
 	/*
-	  * Since Application implements CommandLineRunner, The class is no longer a static class and hence
-	  * can be autowired instead of having to getBeans from application context like in traditional static
-	  * main application classes
+	  * Implementing CommandLineRunner to Test AOP intercepts as soon as App starts running.
+	  * Please not CommandLineRunner is not an AOP specific Interface; it can be used to add or test
+	  * run time behaviours .Since Application implements CommandLineRunner, The class is no longer
+	  * a static class and hence can be autowired instead of having to getBeans from application context
+	  * like in traditional static main application classes
 	*/
 
     @Autowired
@@ -31,6 +32,7 @@ public class AopPracticeApplication implements CommandLineRunner {
         SpringApplication.run(AopPracticeApplication.class, args);
     }
 
+    //CommanLineRunner Override. Insert RunTime logic here.
     @Override
     public void run(String... args) throws Exception {
         LOGGER.info("==========> {}", businessServiceImpl1.calculateSomething());

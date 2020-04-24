@@ -22,7 +22,6 @@ public class PersonDao {
     public JdbcConnection getJdbcConnection(){
         return jdbcConnection;
     }
-
     @PostConstruct
     public void greet() {
         LOGGER.info("======> Bean {} (hashCode={}) says Hi ! <======",

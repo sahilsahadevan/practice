@@ -2,7 +2,7 @@ logging:
   level:
     #root: DEBUG
     org.springframework: INFO
-#    com.example.sahil.practice.scope.connection: INFO
+    com.example.sahil.practice.aop: INFO
 
 management:
   endpoints:
