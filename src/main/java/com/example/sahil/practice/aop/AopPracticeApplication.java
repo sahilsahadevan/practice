@@ -12,13 +12,11 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @SpringBootApplication
 public class AopPracticeApplication implements CommandLineRunner {
 
-	/*
-	  * Implementing CommandLineRunner to Test AOP intercepts as soon as App starts running.
-	  * Please not CommandLineRunner is not an AOP specific Interface; it can be used to add or test
-	  * run time behaviours .Since Application implements CommandLineRunner, The class is no longer
-	  * a static class and hence can be autowired instead of having to getBeans from application context
-	  * like in traditional static main application classes
-	*/
+    /*
+     * Implementing CommandLineRunner to Test AOP intercepts (once per startup) as soon as App starts running.
+     * Since Application implements CommandLineRunner, The class is no longer
+     * a static class and hence can be autowired instead of having to getBeans from application context like in traditional static main application classes
+     */
 
     @Autowired
     public BusinessServiceImpl1 businessServiceImpl1;
@@ -35,8 +33,8 @@ public class AopPracticeApplication implements CommandLineRunner {
     //CommanLineRunner Override. Insert RunTime logic here.
     @Override
     public void run(String... args) throws Exception {
-        LOGGER.info("==========> {}", businessServiceImpl1.calculateSomething());
-		LOGGER.info("==========> {}", businessServiceImpl2.calculateSomething());
+        businessServiceImpl1.calculateSomething();
+        businessServiceImpl2.calculateSomething();
     }
 
 }
