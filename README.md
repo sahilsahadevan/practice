@@ -1,2 +1,2 @@
-# practice
-This is a practice to conduct POCs and get more hands-on in Spring-Boot
+# SpringBoot Practice
+This is a practice to get more hands-on in Spring-Boot Concepts
